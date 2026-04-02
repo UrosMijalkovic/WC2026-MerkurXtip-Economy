@@ -810,7 +810,10 @@
     .chain-header { padding: 14px 16px; gap: 10px; }
     .chain-body-inner { padding: 0 16px 14px 54px; }
     .curve-container { padding: 16px; }
-    .stat-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .stat-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .kickoff-stat { padding: 12px 10px; }
+    .kickoff-val { font-size: 20px; }
+    .kickoff-label { font-size: 10px; letter-spacing: 0.5px; }
     .card-grid-2 { grid-template-columns: 1fr !important; }
     .card-grid-3 { grid-template-columns: 1fr !important; }
     .calc-outputs-3 { grid-template-columns: 1fr 1fr !important; }
@@ -865,6 +868,16 @@
     gap: 10px;
     margin-top: 16px;
   }
+  .kickoff-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kickoff-val { font-size: 24px; font-weight: 900; }
+  .kickoff-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
   .card-grid-2 { grid-template-columns: 1fr 1fr; }
   .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
   .calc-outputs-3 { grid-template-columns: repeat(3, 1fr); }
@@ -1189,21 +1202,21 @@
 
     <h3>By WC Kickoff, Every Active Player:</h3>
     <div class="stat-grid-4">
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; text-align: center;">
-        <div style="font-size: 24px; font-weight: 900; color: var(--accent-cyan);">5-8</div>
-        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Packs Opened</div>
+      <div class="kickoff-stat">
+        <div class="kickoff-val" style="color: var(--accent-cyan);">5-8</div>
+        <div class="kickoff-label">Packs Opened</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; text-align: center;">
-        <div style="font-size: 24px; font-weight: 900; color: var(--accent-green);">1-2</div>
-        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Countries Near Done</div>
+      <div class="kickoff-stat">
+        <div class="kickoff-val" style="color: var(--accent-green);">1-2</div>
+        <div class="kickoff-label">Countries Near Done</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; text-align: center;">
-        <div style="font-size: 24px; font-weight: 900; color: var(--accent-gold);">&#10003;</div>
-        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Loop Understood</div>
+      <div class="kickoff-stat">
+        <div class="kickoff-val" style="color: var(--accent-gold);">&#10003;</div>
+        <div class="kickoff-label">Loop Understood</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; text-align: center;">
-        <div style="font-size: 24px; font-weight: 900; color: var(--accent-purple);">&#128274;</div>
-        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Emotionally Locked In</div>
+      <div class="kickoff-stat">
+        <div class="kickoff-val" style="color: var(--accent-purple);">&#128274;</div>
+        <div class="kickoff-label">Emotionally Locked In</div>
       </div>
     </div>
   </section>
