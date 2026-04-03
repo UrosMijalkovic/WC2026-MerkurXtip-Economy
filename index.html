@@ -1846,6 +1846,7 @@ function buildChain(containerId, steps) {
 }
 
 buildChain('onboardChain', onboardSteps);
+document.querySelector('#onboardChain .chain-step').classList.add('open');
 
 // ═══════════ TOGGLE CHAIN STEPS ═══════════
 function toggleChain(header) {
